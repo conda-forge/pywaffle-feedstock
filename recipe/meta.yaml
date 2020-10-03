@@ -1,5 +1,5 @@
 {% set name = "PyWaffle" %}
-{% set version = "0.2.1" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 74c1f4f4f75412889f97255e9e4cd94aa133c42b5b7bc83afb92a51621c79613
+  sha256: 8d040e43d049a987cdf1fd813c8030e16a076bd08c74adb7b9646f695691997b
   
 build:
   noarch: python
@@ -16,13 +16,11 @@ build:
 
 requirements:
   build:
-
-  host:
-    - python >=3
+    - python
     - pip
   run:
-    - python >=3
-    - matplotlib
+    - python
+    - matplotlib-base
 
 test:
   imports:
