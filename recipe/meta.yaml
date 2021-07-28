@@ -1,5 +1,5 @@
 {% set name = "PyWaffle" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,15 +7,15 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 8d040e43d049a987cdf1fd813c8030e16a076bd08c74adb7b9646f695691997b
-  
+  sha256: f2c97b74c9629a7a4988ec94c63849ac4b8dd06633e2c2804a048f8c73664876
+
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A FigureClass of Matplotlib to make waffle chart.'
+  summary: A FigureClass of Matplotlib to make waffle chart.
 
   description: |
     PyWaffle is a Python package to make waffle chart, bases on Matplotlib.
