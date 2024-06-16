@@ -1,5 +1,5 @@
 {% set name = "PyWaffle" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 782867a45082a971b64998baa80e4d14c691ab2527b5a17e700b09c59761799e
+  sha256: d3d98178b76bcf1e179fd3c9d77b18fa231e32d628710441ceddb4451ddf3c4a
 
 build:
   noarch: python
