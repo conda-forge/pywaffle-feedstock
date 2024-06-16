@@ -21,7 +21,6 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - fontawesomefree
     - matplotlib-base
 
 test:
