@@ -17,9 +17,11 @@ build:
 requirements:
   host:
     - python >=3.6
+    - scripts
     - pip
   run:
     - python >=3.6
+    - fontawesomefree
     - matplotlib-base
 
 test:
@@ -27,18 +29,18 @@ test:
     - pywaffle
 
 about:
-  home: https://github.com/ligyxy/PyWaffle
+  home: https://github.com/gyli/PyWaffle
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: A FigureClass of Matplotlib to make waffle chart.
+  summary: PyWaffle is an open source, MIT-licensed Python package for plotting waffle charts.
 
   description: |
     PyWaffle is a Python package to make waffle chart, bases on Matplotlib.
     It provides a Figure constructor class Waffle, which could be passed to 
     matplotlib.pyplot.figure and generates a matplotlib Figure object.
   doc_url: https://pywaffle.readthedocs.io/en/latest/
-  dev_url: https://github.com/ligyxy/PyWaffle
+  dev_url: https://github.com/gyli/PyWaffle
 
 extra:
   recipe-maintainers:
